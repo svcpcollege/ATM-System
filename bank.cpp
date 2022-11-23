@@ -22,7 +22,7 @@ public:
 BankAccounts::BankAccounts(/* args */)
 {
     acc_number = 123456789;
-    acc_card_number = 123412341234;
+    acc_card_number = 12341234;
     acc_holder_name = "John Doe";
     acc_balance = 100000;
     acc_PIN = 1234;
