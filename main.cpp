@@ -21,11 +21,13 @@ public:
     void get_user_card_number()
     {
         cout << "Enter your card number: ";
+        cin.clear();
         cin >> user_card_number;
     }
     void get_user_pin()
     {
         cout << "Enter your pin: ";
+        cin.clear();
         cin >> user_pin;
     }
 };
