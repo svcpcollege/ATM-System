@@ -199,6 +199,7 @@ int main()
     ATM session1;
     system("clear");
     cout << "----WELCOME TO ATM----" << endl;
+    cout << "Time: " << __TIME__ << endl;
     sleep(3);
     system("clear");
     session1.display_menu();
