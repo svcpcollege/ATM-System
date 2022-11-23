@@ -1,7 +1,7 @@
 // Automated Teller Machine (ATM) Project
 
 #include <iostream>
-#include <windows.h> // windows.h for windows
+#include <unistd.h> // windows.h for windows
 #include "bank.cpp"
 using namespace std;
 
