@@ -184,8 +184,9 @@ void ATM::display_user_details()
     {
         cout << endl;
         cout << "Account Number: " << ATM_acc_number << endl;
+        cout << "Account Holder Name: " << ATM_acc_holder_name << endl;
         cout << "Card Number: " << ATM_acc_card_number << endl;
-        cout << "Account Holder Name: " << ATM_acc_balance << endl;
+        cout << "Account Balance: " << ATM_acc_balance << endl;
         cout << endl;
     }
     else
