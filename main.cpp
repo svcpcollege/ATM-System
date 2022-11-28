@@ -7,9 +7,6 @@ using namespace std;
 
 class User
 {
-private:
-    /* data */
-
 protected:
     long int user_card_number;
     int user_pin;
@@ -47,7 +44,7 @@ private:
     long int ATM_acc_PIN;
 
 public:
-    ATM(/* args */);
+    ATM();
     ~ATM();
 
     void display_menu();
@@ -126,7 +123,7 @@ public:
     }
 };
 
-ATM::ATM(/* args */)
+ATM::ATM()
 {
     ATM_Status = true;
     ATM_acc_number = acc_number;
@@ -137,6 +134,11 @@ ATM::ATM(/* args */)
 
     // for(int acc_slot = 0; acc_slot < 1000000 ; acc_slot++)
     // for multiple accounts
+
+
+    system("clear");
+    cout << "----WELCOME TO ATM----" << endl;
+    cout << "Time: " << __TIME__ << endl;
 }
 
 ATM::~ATM()
@@ -197,10 +199,8 @@ void ATM::display_user_details()
 
 int main()
 {
+    
     ATM session1;
-    system("clear");
-    cout << "----WELCOME TO ATM----" << endl;
-    cout << "Time: " << __TIME__ << endl;
     sleep(3);
     system("clear");
     session1.display_menu();
