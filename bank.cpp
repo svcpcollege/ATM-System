@@ -92,23 +92,70 @@ public:
     long int returnAccountNumber()
     {
         return this->accountNumber;
+        string name;
+        while (fin >> accno >> bal >> pass >> name)
+        {
+            if (accno == this->accountNumber && name == this->Name)
+            {
+                fin.close();
+                return accno;
+            }
+        }
     }
     long int returnBalance()
     {
-        return this->balance;
+        ifstream fin;
+        fin.open("ACCOUNTS.txt", ios::in);
+        long int accno;
+        long int bal;
+        int pass;
+        string name;
+        while (fin >> accno >> bal >> pass >> name)
+        {
+            if (accno == this->accountNumber && name == this->Name)
+            {
+                fin.close();
+                return bal;
+            }
+        }
     }
     int returnPassword()
     {
-        return this->password;
+        ifstream fin;
+        fin.open("ACCOUNTS.txt", ios::in);
+        long int accno;
+        long int bal;
+        int pass;
+        string name;
+        while (fin >> accno >> bal >> pass >> name)
+        {
+            if (accno == this->accountNumber && name == this->Name)
+            {
+                fin.close();
+                return pass;
+            }
+        }
     }
     string returnName()
     {
-        return this->Name;
+        ifstream fin;
+        fin.open("ACCOUNTS.txt", ios::in);
+        long int accno;
+        long int bal;
+        int pass;
+        string name;
+        while (fin >> accno >> bal >> pass >> name)
+        {
+            if (accno == this->accountNumber && name == this->Name)
+            {
+                fin.close();
+                return name;
+            }
+        }
     }
 };
 
 int main()
 {
-    
     return 0;
 }
