@@ -91,7 +91,11 @@ public:
 
     long int returnAccountNumber()
     {
-        return this->accountNumber;
+        ifstream fin;
+        fin.open("ACCOUNTS.txt", ios::in);
+        long int accno;
+        long int bal;
+        int pass;
         string name;
         while (fin >> accno >> bal >> pass >> name)
         {
